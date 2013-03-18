@@ -1,0 +1,12 @@
+<p>
+	<b>Tape Number:</b>
+	<%= @tape.number %>
+</p>
+<p>
+	<b>Description:</b>
+	<%= @tape.description %>
+</p>
+
+<%= link_to 'Edit', edit_tape_path(@tape) %> |
+<%= link_to 'Delete', @tape, confirm: 'Are you sure?', method: :delete %> | 
+<%= link_to 'Back', tapes_path %>

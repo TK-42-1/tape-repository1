@@ -1,5 +1,5 @@
 TapeRepository::Application.routes.draw do
-  get "tapes/home"
+  get "tapes/index"
 
   get "tapes/new"
 

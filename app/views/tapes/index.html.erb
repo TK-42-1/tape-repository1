@@ -1,0 +1,18 @@
+<h1>Tape Information</h1>
+
+<h2><%= link_to 'Enter New Tape', new_tape_path %></h2>
+<table>
+  <tr>
+    <th>Tape</th>
+		<th></th>
+  </tr>
+
+<% @tapes.each do |tape| %>
+  <tr>
+    <td><%= link_to "#{tape.number}", tape %></td>
+    <td><%= link_to 'Edit', edit_tape_path(tape) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
