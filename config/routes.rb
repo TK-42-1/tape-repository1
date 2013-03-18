@@ -1,4 +1,8 @@
 TapeRepository::Application.routes.draw do
+  get "tapes/home"
+
+  get "tapes/new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
