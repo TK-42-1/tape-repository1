@@ -1,7 +1,6 @@
 TapeRepository::Application.routes.draw do
-  get "tapes/index"
-
-  get "tapes/new"
+  root to: 'tapes#index'
+  resources :tapes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

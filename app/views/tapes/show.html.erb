@@ -6,6 +6,10 @@
 	<b>Description:</b>
 	<%= @tape.description %>
 </p>
+<p>
+	<b>Code:</b>
+	<%= link_to image_tag(@code), asset_path(@code) %>
+</p>
 
 <%= link_to 'Edit', edit_tape_path(@tape) %> |
 <%= link_to 'Delete', @tape, confirm: 'Are you sure?', method: :delete %> | 

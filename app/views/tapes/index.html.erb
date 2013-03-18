@@ -10,6 +10,7 @@
 <% @tapes.each do |tape| %>
   <tr>
     <td><%= link_to "#{tape.number}", tape %></td>
+		<td><%= "#{tape.description}" %></td>
     <td><%= link_to 'Edit', edit_tape_path(tape) %></td>
   </tr>
 <% end %>

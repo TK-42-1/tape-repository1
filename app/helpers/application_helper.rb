@@ -7,4 +7,8 @@ module ApplicationHelper
         "#{base_title} | #{@title}"
       end
     end
+    
+    def code
+      code = image_tag("#{@tape.number}.png")
+    end
 end
