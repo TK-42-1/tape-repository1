@@ -1,15 +1,14 @@
-<p>
-	<b>Tape Number:</b>
-	<%= @tape.number %>
-</p>
-<p>
-	<b>Description:</b>
+<h1>
 	<%= @tape.description %>
-</p>
-<p>
-	<b>Code:</b>
+</h1>
+<h3>
+	Tape Number:
+	<%= @tape.number %>
+</h3>
+<h3>
+	<b>Code:</b><br />
 	<%= link_to image_tag(@code), asset_path(@code) %>
-</p>
+</h3>
 
 <%= link_to 'Edit', edit_tape_path(@tape) %> |
 <%= link_to 'Delete', @tape, confirm: 'Are you sure?', method: :delete %> | 
